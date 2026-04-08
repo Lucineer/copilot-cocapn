@@ -109,6 +109,31 @@ wrangler secret put OPENAI_API_KEY      # OpenAI
 wrangler secret put ZAI_API_KEY          # z.ai (GLM)
 ```
 
+### Using BYOK Models with Copilot CLI
+
+Copilot CLI supports custom models per agent. Set the `model` field in the agent's `.agent.md` frontmatter:
+
+```yaml
+---
+name: fleet-pilot
+model: deepseek-chat    # Use DeepSeek for this agent
+---
+```
+
+You can also specify models inline in prompts:
+
+```
+> Use @fleet-pilot to create a vessel. Use deepseek-reasoner for the architecture design.
+```
+
+For parallel fleet operations with `/fleet`, specify different models per subtask:
+
+```
+> /fleet Create a new vessel called email-notifier. 
+> Use deepseek-chat for the worker.ts generation.
+> Use deepseek-reasoner for the architecture review.
+```
+
 ## Fork-First
 
 Every vessel is forkable and self-hostable. No platform lock-in.

@@ -2,6 +2,8 @@
 name: cocapn-architect
 description: Cocapn architecture advisor — design vessel architectures, fleet protocols, and integration patterns. Use when planning new vessels, designing fleet protocols, or reasoning about fleet architecture. Trigger words: architecture, design-vessel, protocol, fleet-pattern.
 tools: ["bash", "edit", "view"]
+# Uncomment and set to use a specific BYOK model:
+# model: deepseek-reasoner
 ---
 
 # Cocapn Architect

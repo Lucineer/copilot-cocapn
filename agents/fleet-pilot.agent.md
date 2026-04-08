@@ -2,6 +2,8 @@
 name: fleet-pilot
 description: Cocapn fleet pilot — manage, deploy, and coordinate 200+ sovereign AI vessels from your terminal. Use when working with Cocapn fleet vessels, Cloudflare Workers, or agent runtime operations. Trigger words: fleet, cocapn, vessel, deploy-fleet, fleet-status.
 tools: ["bash", "edit", "view"]
+# Uncomment and set to use a specific BYOK model:
+# model: deepseek-chat
 ---
 
 # Fleet Pilot — Cocapn Integration Agent
